@@ -26,7 +26,7 @@
 """
 
 import sys
-file = open("DATA", "r")
+file = open("dataset", "r")
 
 lines = file.readlines()
 file.close()
