@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title>Guest Book/title>
+    </head>
+    <body>
+        <h1>{{ user.greeting }}, {{ user.firstname }} {{ user.lastname }}!</h1>
+        <p>Welcome in your forst visit to this page!</p>
+            <p> We have recorded the folowing information about you:</p>
+            <ul>
+                <li/> Name: {{ user.firstname }} {{ user.middlename }} {{ user.lastname }}
+                <li/> Address: {{ user.address }}
+                <li/> Email: {{ user.email }}
+                <li/> Greeting: {{ user.greeting }}                  
+                <li/> Number of visits: {{ user.visits }}
+            </ul>
+    </body>
+</html>

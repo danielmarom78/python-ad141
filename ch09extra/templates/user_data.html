@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>Guest Book</title>
+    </head>
+    <body>
+        <h1>new account</h1>
+        <p>Please provide some aditional data about you, {{ fn }}!</p>
+        <table>
+        <form method="post">
+            <tr><td>First name:</td><td><input type="text" name="firstname" value="{{ fn }}" size="25"/></td></tr>
+            <tr><td>Middle name:</td><td><input type="text" name="middlename" value="{{ mn }}" size="25"/></td></tr>
+            <tr><td>Last name:</td><td><input type="text" name="lastname" value="{{ ln }}" size="25"/></td></tr>
+            <tr><td>Address:</td><td><input type="text" name="address" size="25"/></td></tr> 
+            <tr><td>City:</td><td><input type="text" name="city" size="25"/></td></tr>    
+            <tr><td>State:</td><td><input type="text" name="state" size="25"/></td></tr>
+            <tr><td>Zip:</td><td><input type="text" name="zip" size="25"/></td></tr>
+            <tr><td>Phone:</td><td><input type="text" name="phone" size="25"/></td></tr>
+            <tr><td>Email:</td><td><input type="text" name="email" size="25"/></td></tr>
+            <tr><td>Greeting:</td><td><input type="text" name="greeting" size="25"/></td></tr>
+            <tr><td colspan = "2"><input type="submit" value="Updated!"/></td></tr>
+        </form>
+        </table>
+    </body>
+</html>

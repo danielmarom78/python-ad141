@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>Greet User</title>
+    </head>
+    <body>
+        <h1>{{ user.greeting }}, {{ user.firstname }} {{ user.lastname }}!</h1>
+        <p>Welcome back! You have visited us {{ user.visits }}
+            {% if user.visits == 1 %}
+                time
+            {% else %}
+                times
+            {% endif %} by now!</p>
+            <p> We have the folowing information about you on file:</p>
+            <ul>
+                <li/> Name: {{ user.firstname }} {{ user.middlename }} {{ user.lastname }}
+                <li/> Address: {{ user.address }}
+                <li/> Email: {{ user.email }}
+                <li/> Greeting: {{ user.greeting }}  
+                <li/> Number of visits: {{ user.visits }}
+            </ul>
+    </body>
+</html>
