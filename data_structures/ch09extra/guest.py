@@ -94,13 +94,14 @@ class Guest:
     def visits(self, visits):
         self._visits = int(visits)
 
+    # Improving serialization by delegating conversion to list here.
     def as_list(self):
         return [self.firstname, self.middlename, self.lastname,
                     self.address, self.city, self.state, self.country, 
                     self.email, self.greeting, self.visits]
 
     def __str__(self):
-        return "Guset[First: {}, Middle: {}, Last: {}, Address: {}, City: {}, State: {}, Country: {}, Email: {}, Greeting: {}, Visits: {}]".format(
+        return "Guset[First: {}, Middle: {}, Last: {}, Address: {}, {}, {}, {}, Email: {}, Greeting: {}, Visits: {}]".format(
             self.firstname, self.middlename, self.lastname, 
             self.address, self.city, self.state, self.country, 
             self.email, self.greeting, self.visits)  
